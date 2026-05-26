@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JR DevProfile</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold fs-4" href="#">
+        JR DevProfile
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNavbar">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Início
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Projetos
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Tecnologias
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              Configurações
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  Perfil
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  Conta
+                </a>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  Segurança
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+        <a href="#" class="btn btn-outline-light ms-auto">
+          Sair
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class="container my-5">
+
+    <div class="row g-4">
+
+    
+      <aside class="col-12 col-md-4 order-1 order-lg-2">
+
+        <div class="card bg-black text-light border-secondary shadow-lg p-3">
+
+          <div class="d-flex justify-content-center mb-4">
+
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop"
+              class="rounded-circle img-fluid border border-3 border-primary"
+              alt="Foto de Perfil"
+            >
+
+          </div>
+
+          <!-- NOME -->
+          <div class="text-center">
+
+            <h2 class="fw-bold">
+              José Reginaldo
+            </h2>
+
+            <p class="text-info fw-semibold">
+              Front-End • Banco de Dados • Lógica de Programação
+            </p>
+
+            <p class="text-secondary">
+              Desenvolvedor focado em criar interfaces modernas,
+              responsivas e profissionais utilizando as melhores
+              práticas do desenvolvimento web.
+            </p>
+
+          </div>
+
+          <!-- BOTÕES -->
+          <div class="d-flex gap-2 justify-content-center mt-4">
+
+            <button class="btn btn-primary active">
+              Seguindo
+            </button>
+
+            <!-- MODAL -->
+            <button
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#mensagemModal"
+            >
+              Enviar Mensagem
+            </button>
+
+          </div>
+
+          <!-- TECNOLOGIAS -->
+          <div class="mt-4 text-center">
+
+            <h5 class="mb-3">
+              Tecnologias
+            </h5>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+
+              <span class="badge bg-primary">
+                HTML5
+              </span>
+
+              <span class="badge bg-success">
+                CSS3
+              </span>
+
+              <span class="badge bg-warning text-dark">
+                JavaScript
+              </span>
+
+              <span class="badge bg-info text-dark">
+                Bootstrap
+              </span>
+
+              <span class="badge bg-danger">
+                React
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+      <!-- POSTS -->
+      <main class="col-12 col-md-8 order-2 order-lg-1">
+
+        <h2 class="mb-4 fw-bold">
+          Últimos Projetos
+        </h2>
+
+        <!-- POST 1 -->
+        <div class="card bg-black text-light border-secondary shadow-lg mb-4">
+
+          <div class="card-body">
+
+            <h4 class="card-title">
+              Dashboard Responsivo
+            </h4>
+
+            <p class="card-text text-secondary">
+              Desenvolvimento de um painel administrativo moderno
+              utilizando Bootstrap Grid System, Flexbox e componentes
+              responsivos.
+            </p>
+
+            <a
+              href="https://getbootstrap.com/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Ver Projeto
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- POST 2 -->
+        <div class="card bg-black text-light border-secondary shadow-lg mb-4">
+
+          <div class="card-body">
+
+            <h4 class="card-title">
+              Sistema de Cadastro
+            </h4>
+
+            <p class="card-text text-secondary">
+              Projeto voltado para organização de dados,
+              lógica de programação e integração de formulários modernos.
+            </p>
+
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              class="btn btn-outline-info"
+            >
+              Explorar
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- GALERIA -->
+        <h3 class="mb-4 fw-bold">
+          Galeria de Projetos
+        </h3>
+
+        <div class="row g-4">
+
+          <!-- CARD 1 -->
+          <div class="col-12 col-md-4">
+
+            <div class="card bg-black text-light border-secondary shadow-lg h-100">
+
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Front-End"
+              >
+
+              <div class="card-body text-center">
+
+                <h5 class="card-title">
+                  Front-End Moderno
+                </h5>
+
+                <p class="card-text text-secondary">
+                  Interfaces profissionais e responsivas.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-12 col-md-4">
+
+            <div class="card bg-black text-light border-secondary shadow-lg h-100">
+
+              <img
+                src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Banco de Dados"
+              >
+
+              <div class="card-body text-center">
+
+                <h5 class="card-title">
+                  Banco de Dados
+                </h5>
+
+                <p class="card-text text-secondary">
+                  Estruturação e organização de informações.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-12 col-md-4">
+
+            <div class="card bg-black text-light border-secondary shadow-lg h-100">
+
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Lógica de Programação"
+              >
+
+              <div class="card-body text-center">
+
+                <h5 class="card-title">
+                  Lógica de Programação
+                </h5>
+
+                <p class="card-text text-secondary">
+                  Soluções inteligentes e organizadas.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="col-12 col-md-4">
+
+            <div class="card bg-black text-light border-secondary shadow-lg h-100">
+
+              <img
+                src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="JavaScript"
+              >
+
+              <div class="card-body text-center">
+
+                <h5 class="card-title">
+                  JavaScript
+                </h5>
+
+                <p class="card-text text-secondary">
+                  Interatividade e dinamismo para aplicações web.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="col-12 col-md-4">
+
+            <div class="card bg-black text-light border-secondary shadow-lg h-100">
+
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="React"
+              >
+
+              <div class="card-body text-center">
+
+                <h5 class="card-title">
+                  React
+                </h5>
+
+                <p class="card-text text-secondary">
+                  Construção de interfaces modernas e escaláveis.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="col-12 col-md-4">
+
+            <div class="card bg-black text-light border-secondary shadow-lg h-100">
+
+              <img
+                src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Bootstrap"
+              >
+
+              <div class="card-body text-center">
+
+                <h5 class="card-title">
+                  Bootstrap 5
+                </h5>
+
+                <p class="card-text text-secondary">
+                  Componentes modernos e responsivos.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <!-- MODAL -->
+  <div
+    class="modal fade"
+    id="mensagemModal"
+    tabindex="-1"
+  >
+
+    <div class="modal-dialog">
+
+      <div class="modal-content bg-dark text-light border-secondary">
+
+        <div class="modal-header border-secondary">
+
+          <h5 class="modal-title">
+            Nova Mensagem
+          </h5>
+
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <input
+            type="text"
+            class="form-control mb-3"
+            placeholder="Assunto"
+          >
+
+          <textarea
+            class="form-control"
+            rows="4"
+            placeholder="Digite sua mensagem..."
+          ></textarea>
+
+        </div>
+
+        <div class="modal-footer border-secondary">
+
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Fechar
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+          >
+            Enviar
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
